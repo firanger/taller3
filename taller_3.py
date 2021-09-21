@@ -112,3 +112,23 @@ for h in range(len(trabajadores)):
     print("la paga por las horas trabajadas del obrero numero ", h, " es: ", trabajadores[h])
     print("por alguna razon en el if donde hay horas menores a 40 no lo multiplica por 20 ")
 """
+"""4. Calcular  el  promedio  de  edades  de  hombres,  mujeres  y  de  todo  un  grupo 
+de alumnos. """
+"""
+hombres=int(input ("ingrese el numero de hombres "))
+mujeres=int(input ("ingrese el numero de mujeres "))
+promediohombres=0
+promediomujeres=0
+promedioalumnos=0
+for i in range(hombres):
+    print("ingrese la edad del hombre numero ", (i+1))
+    a=int(input (""))
+    promediohombres+=a
+for i in range(mujeres):
+    print("ingrese la edad de la mujer numero ", (i+1))
+    a=int(input (""))
+    promediomujeres+=a
+
+print("el promedio de edad en los hombres es :", promediohombres/hombres)
+print("el promedio de edad de las mujeres es :", promediomujeres/hombres)
+print("el promedio de edad en el grupo de alumnos es :", (promediohombres+promediomujeres)/(hombres+mujeres))"""
