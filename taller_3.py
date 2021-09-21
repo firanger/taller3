@@ -260,3 +260,25 @@ print("la comision por los rangos de ventas Mayor o igual de 80 millones y menor
 print("la comision por los rangos de ventas De 160 Millones en adelante  es de: ", sesentaenadelante)
 
 """
+
+""" 10.  La  empresa  Encuestas  S.A  desea  crear  una  función  que  les  permita 
+conocer de los 50.000 votos obtenidos por 3 candidatos, cual de estos fue 
+el ganador o indicar si hubo empate y la cantidad de votos obtenidos. """
+"""
+candidatos = []
+
+
+for i in range(3):
+    print("ingrese la cantidad de votos de el candidato ", (i+1))
+    candidatos[i]=int(input(""))
+if (candidatos[0]>candidatos[1] and candidatos[0]>candidatos[2]):
+    print("el candidato 1 ganó")
+if (candidatos[1]>candidatos[0] and candidatos[1]>candidatos[2]):
+    print("el candidato 2 ganó")
+if (candidatos[2]>candidatos[1] and candidatos[2]>candidatos[0]):
+    print("el candidato 3 ganó")
+if (candidatos[0]==candidatos[1] and candidatos[0]==candidatos[2]):
+    print("empate")
+
+print("sale un error sobre que el recorrido lleva a la lista fuera de su rango\nla lista no tiene rango definido por lo que es infinita\nnose el por que del error")
+"""
