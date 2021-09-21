@@ -166,3 +166,29 @@ for f in range(5):
     if (lista[f]<k):
         print("la persona numero", (i+1), "subió ", (k-lista[f]), "kilos")
 """
+"""7. En un supermercado una ama de casa pone en su carrito los artículos que 
+va tomando de los estantes. La señora quiere asegurarse de que el cajero 
+le  cobre  bien  lo  que  ella  ha  comprado,  por  lo  que  cada  vez  que  toma  un 
+artóculo  anota  su  precio  junto  con  la  cantidad  de  artículos  iguales  que  ha 
+tomado y determina cuanto dinero gastará en ese artículo; a esto le suma lo 
+que  irá  gastando  en  los  demás  artículos,  hasta  que  decide  que  ya  tomó 
+todo  lo  que  necesitaba.  Ayúdele  a  esta  señora  a  obtener  el  total  de  su 
+compra."""
+"""
+total=[]
+nume=int(input("cuantos tipos de articulos quiere comprar "))
+cuenta=0
+for i in range(nume):
+    print("ingrese el nombre del articulo ", (i+1))
+    a=input("") 
+    n= int(input("ingrese el numero de articulos de este tipo "))
+    v= int(input("ingrese el valor del articulo "))
+    cuenta+=(n*v)
+    articulo=a, (n*v)
+    total.append(articulo)
+for f in range(nume):
+    print("el total por los articulos de nombre ",(total[f])[0], "es: " ,(total[f])[1] )
+    
+print("el total a pagar es de: ", cuenta)
+    
+"""
