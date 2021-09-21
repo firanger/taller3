@@ -132,3 +132,13 @@ for i in range(mujeres):
 print("el promedio de edad en los hombres es :", promediohombres/hombres)
 print("el promedio de edad de las mujeres es :", promediomujeres/hombres)
 print("el promedio de edad en el grupo de alumnos es :", (promediohombres+promediomujeres)/(hombres+mujeres))"""
+
+"""5. Encontrar el menor valor de un conjunto de n números dados """
+"""
+numeros=int(input("ingrese el numero de numeros "))
+lista=[]
+for i in range(numeros):
+    print("ingrese el numero en la posicion ",(i+1))
+    lista.append(int(input("")))
+print("el numero menor del conjunto es: ", min(lista))
+"""
