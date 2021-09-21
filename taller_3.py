@@ -230,3 +230,33 @@ print("el dinero perdido por el rango de edad de 46 a 65 es: ", cuarentay6a65)
 print("el dinero perdido por el rango de edad de 66 en adelante es: ", sesentaenadelante)
 
 """
+
+"""9. Kia  Autos  premia  anualmente  a  sus  mejores  vendedores  de  acuerdo  a  la 
+siguiente tabla:"""
+"""
+cincoa14=0
+quincea19=0
+veintea15=0
+cuarentay6a65=0
+sesentaenadelante=0
+ventas=0
+for i in range(100):
+    persona=random.randint(0,200000000)
+    ventas+=persona
+    if (persona<=20000000):
+        cincoa14+=(persona*0.1)
+    if (persona>20000000 and persona<40000000):
+        quincea19+=(persona*0.15)
+    if (persona>=40000000 and persona<80000000):
+        veintea15+=(persona*0.2)
+    if (persona>=80000000 and persona<160000000):
+        cuarentay6a65+=(persona*0.25)
+    if (persona>=160000000):
+        sesentaenadelante+=(persona*0.30)
+print("la comision por los rangos de ventas entre 0 y 20 millones es de: ", cincoa14)
+print("la comision por los rangos de ventas Mayor  de  20  Millones  y menor de 40 Millones es de: ", quincea19)
+print("la comision por los rangos de ventas Mayor o igual de 40 Millones  y  menor  de  80 Millones es de: ", veintea15)
+print("la comision por los rangos de ventas Mayor o igual de 80 millones y menor de 160 Millones ", cuarentay6a65)
+print("la comision por los rangos de ventas De 160 Millones en adelante  es de: ", sesentaenadelante)
+
+"""
