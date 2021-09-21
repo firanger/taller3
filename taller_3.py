@@ -89,3 +89,26 @@ if (animal=="chompancés"):
     print("el porcentaje de especimenes de edades entre mayor a 1 y menor que 3 años es del ", (masdeunañoymenosdetres/40)*100, "%")
     print("el porcentaje de especimenes de edades entre 3 y mas años es del ", (tresomasaños/40)*100, "%")  
 """
+
+
+"""3. Una empresa se requiere calcular el salario semanal de cada uno de los n 
+obreros que laboran en ella. El salario se obtiene de la siguiente forma: 
+a. Si el obrero trabaja 40 horas o menos se le paga $20 por hora 
+b. Si  trabaja  mas  de  40  horas  se  le  paga  $20  por  cada  una  de 
+lasprimeras 40 horas y $25 por cada hora extra.""" 
+"""
+num_trabajadores=int(input("ingrese el numero de trabajadores "))
+trabajadores=[]
+for i in range(num_trabajadores):
+    print("ingrese el numero de horas trabajadas del obrero numero", (i+1))
+    trabajadores.append(int(input()))
+
+for f in range(len(trabajadores)):
+    if (trabajadores[f]<=40):
+        trabajadores[f]=(trabajadores[f]*20)
+    if (trabajadores[f]>40):
+         trabajadores[f]=(40*20)+((trabajadores[f]-40)*25)
+for h in range(len(trabajadores)):
+    print("la paga por las horas trabajadas del obrero numero ", h, " es: ", trabajadores[h])
+    print("por alguna razon en el if donde hay horas menores a 40 no lo multiplica por 20 ")
+"""
