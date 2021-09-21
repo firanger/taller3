@@ -192,3 +192,41 @@ for f in range(nume):
 print("el total a pagar es de: ", cuenta)
     
 """
+"""8. Un  teatro  otorga  descuentos  según  la  edad  del  cliente,  determinar  la 
+cantidad  del  dinero  que  el  teatro  deja  de  percibir  por  cada  ua  de  las 
+categorias.  Tomar  en  cuenta  que  los  niños  menores  de  5  años  no  pueden 
+entrar al teatro y que existe un precio único en los asientos. Los descuentos 
+se hacen tomando en cuenta el siguiente cuadro:"""
+"""
+precio=int(input("ingrese cuento cuesta cada entrada"))
+
+numero=int(input("ingrese el numero de personas que compraron entradas"))
+menor=0
+cincoa14=0
+quincea19=0
+veintea15=0
+cuarentay6a65=0
+sesentaenadelante=0
+for i in range(numero):
+    print("ingrese la edad de la persona ", (i+1))
+    persona=int(input(""))
+    if (persona<5):
+        menor+=1 
+    if (persona>=5 and persona<=15):
+        cincoa14+=(precio*0.35)
+    if (persona>=15 and persona<=19):
+        quincea19+=(precio*0.25)
+    if (persona>=20 and persona<=45):
+        veintea15+=(precio*0.1)
+    if (persona>=46 and persona<=65):
+        cuarentay6a65+=(precio*0.25)
+    if (persona>=66):
+        sesentaenadelante+=(precio*0.35)
+print("el numero de personas menores a 5 años que intentaron comprar entradas es", menor )
+print("el dinero perdido por el rango de edad de 5 a 14 es: ", cincoa14)
+print("el dinero perdido por el rango de edad de 15 a 19 es: ", quincea19)
+print("el dinero perdido por el rango de edad de 20 a 45 es: ", veintea15)
+print("el dinero perdido por el rango de edad de 46 a 65 es: ", cuarentay6a65)
+print("el dinero perdido por el rango de edad de 66 en adelante es: ", sesentaenadelante)
+
+"""
