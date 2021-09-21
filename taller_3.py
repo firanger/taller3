@@ -142,3 +142,27 @@ for i in range(numeros):
     lista.append(int(input("")))
 print("el numero menor del conjunto es: ", min(lista))
 """
+""" 6 .Cinco  miembros  de  un  club  contra  la  obesidad  desean  saber  cuanto  han 
+bajado o subido de peso desde la última vez que se reunieron. Para esto se 
+debe  realizar  un  ritual  de  pesaje  en  donde  cada  uno  se  pesa  en  diez 
+básculas  distintas  para  así  tener  el  pormedio  mas  exacto  de  su  peso.  Si xiste diferencia positiva entre este promedio de peso y el peso de la última 
+vez  que  se  reunieron,  significa  que  subieron  de  peso.  Pero  si  la  diferencia 
+es  negativa,  significa  que  bajaron.  Lo  que  el  problema  requere  es  que  por 
+cada  persona  se  imprima  un  letrero  que  diga:  “SUBIÓ”  o  “BAJÓ”  y  la 
+cantidad de kilos que subió o bajó de peso.  """
+"""
+lista = []
+
+for i in range(5):
+    print("ingrese el promedio anterior a la prueba de la persona ",(i+1))
+    lista.append(int(input("")))
+
+for f in range(5):
+    k=random.randint(0,500)
+    if (lista[f]>k):
+        print("la persona numero", (i+1), "bajó ", (lista[f]-k),"kilos")
+    if (lista[f]==k):
+        print("la persona numero", (i+1), "persa lo mismo que antes")
+    if (lista[f]<k):
+        print("la persona numero", (i+1), "subió ", (k-lista[f]), "kilos")
+"""
